@@ -1,0 +1,41 @@
+/* Contenedor de tarjetas */
+.card-container {
+    background-color: black;
+    display: grid; /* Usar grid para el diseño */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 15px; /* Espacio alrededor del contenedor */
+    justify-items: center; /* Centrar tarjetas horizontalmente en sus columnas */
+    margin-top: 25px; /* Margen superior de 15px */
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    background-color: #fff; /* Color de fondo blanco */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+    transition: transform 0.2s; /* Transición para el hover */
+    width: 100%; /* Ancho total de la tarjeta */
+    max-width: 250px; /* Ancho máximo para controlar el tamaño */
+}
+
+/* Efecto al pasar el ratón sobre la tarjeta */
+.card:hover {
+    transform: translateY(-5px); /* Elevar la tarjeta un poco */
+}
+
+/* Estilo para los encabezados de las tarjetas */
+.card h3 {
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo para el contenido de las tarjetas */
+.card p {
+    font-size: 1rem; /* Tamaño de fuente para el contenido */
+    color: #555; /* Color gris oscuro */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+

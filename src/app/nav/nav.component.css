@@ -1,0 +1,35 @@
+/* nav.component.css */
+nav {
+    background-color: rgb(17, 204, 17);
+    padding: 10px 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-item:hover {
+    background-color: rgb(5, 102, 18);
+    transform: scale(1.05);
+}
+
+.nav-item:first-child {
+    font-weight: bold;
+}
+
+nav a.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+}
