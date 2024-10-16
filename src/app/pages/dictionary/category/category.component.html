@@ -1,2 +1,15 @@
-<h1>Categoria</h1>
-<p>Aquí puedes añadir contenido relacionado con las categorías.</p>
+<h1>cateogrias</h1>
+
+@if(categoryResult$ | async; as resultObject){
+<ul>
+    @for(item of resultObject.data; track item.category){
+        <li>
+            <app-category-items  [categoryInfo]="item"/>
+        </li>
+    }
+</ul>
+}
+
+@if (errorMessage) {
+    <app-error-message [errorMessage]="errorMessage"/>
+}
